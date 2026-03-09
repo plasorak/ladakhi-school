@@ -1,13 +1,18 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-900 via-teal-800 to-teal-600 text-white">
-      {/* Mountain silhouette decoration */}
-      <div className="absolute inset-0 overflow-hidden opacity-10">
-        <svg viewBox="0 0 1440 500" className="absolute bottom-0 w-full" preserveAspectRatio="xMidYMax slice">
-          <path d="M0,500 L180,200 L360,320 L540,100 L720,260 L900,60 L1080,220 L1260,140 L1440,180 L1440,500 Z" fill="white" />
-          <path d="M0,500 L240,340 L480,420 L720,300 L960,380 L1200,280 L1440,360 L1440,500 Z" fill="white" opacity="0.5" />
-        </svg>
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center text-white">
+      {/* Background photo */}
+      <Image
+        src="/back-cover.jpg"
+        alt="Himalayan landscape"
+        fill
+        className="object-cover object-center"
+        priority
+      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-sky-950/60" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20">
         <div className="mb-6">
