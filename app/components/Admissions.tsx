@@ -35,13 +35,13 @@ const fees = [
 
 export default function Admissions() {
   return (
-    <section id="admissions" className="py-20 bg-white">
+    <section id="admissions" className="py-20 bg-teal-800 text-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Admissions process */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">Admissions</h2>
-          <div className="w-16 h-1 bg-amber-500 mx-auto mb-6"></div>
-          <p className="text-slate-600">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Admissions</h2>
+          <div className="w-16 h-1 bg-orange-400 mx-auto mb-6"></div>
+          <p className="text-teal-200">
             Admissions are open in <strong>November</strong> and <strong>March</strong>.
           </p>
         </div>
@@ -49,12 +49,12 @@ export default function Admissions() {
         <div className="max-w-2xl mx-auto mb-20">
           {steps.map((step) => (
             <div key={step.num} className="flex gap-5 mb-8">
-              <div className="flex-shrink-0 w-12 h-12 bg-sky-900 text-white rounded-full flex items-center justify-center font-bold text-sm">
+              <div className="flex-shrink-0 w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
                 {step.num}
               </div>
               <div className="pt-2.5">
-                <h3 className="font-bold text-sky-900 mb-1">{step.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
+                <h3 className="font-bold text-orange-400 mb-1">{step.title}</h3>
+                <p className="text-teal-200 text-sm leading-relaxed">{step.desc}</p>
               </div>
             </div>
           ))}
@@ -62,17 +62,17 @@ export default function Admissions() {
 
         {/* Fee structure */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">Fee Structure</h2>
-          <div className="w-16 h-1 bg-amber-500 mx-auto mb-6"></div>
-          <p className="text-slate-600 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Fee Structure</h2>
+          <div className="w-16 h-1 bg-orange-400 mx-auto mb-6"></div>
+          <p className="text-teal-200 max-w-xl mx-auto">
             We aim to provide quality education at an affordable cost. Our fees are simple and transparent.
           </p>
         </div>
 
         <div className="overflow-x-auto max-w-3xl mx-auto mb-8">
-          <table className="w-full border-collapse rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+          <table className="w-full border-collapse rounded-2xl overflow-hidden shadow-sm border border-teal-700">
             <thead>
-              <tr className="bg-sky-900 text-white text-sm">
+              <tr className="bg-teal-700 text-white text-sm">
                 <th className="text-left px-6 py-4 font-semibold">Class</th>
                 <th className="text-right px-6 py-4 font-semibold">Monthly (₹)</th>
                 <th className="text-right px-6 py-4 font-semibold">Yearly (₹)</th>
@@ -82,21 +82,21 @@ export default function Admissions() {
             </thead>
             <tbody>
               {fees.map((row, i) => (
-                <tr key={row.class} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
-                  <td className="px-6 py-4 font-medium text-sky-900 text-sm">{row.class}</td>
-                  <td className="px-6 py-4 text-right text-slate-600 text-sm">{row.monthly}</td>
-                  <td className="px-6 py-4 text-right text-slate-600 text-sm">{row.yearly}</td>
-                  <td className="px-6 py-4 text-right text-slate-600 text-sm">{row.usd}</td>
-                  <td className="px-6 py-4 text-right text-slate-600 text-sm">{row.eur}</td>
+                <tr key={row.class} className={i % 2 === 0 ? "bg-teal-700/60" : "bg-teal-700/30"}>
+                  <td className="px-6 py-4 font-medium text-orange-400 text-sm">{row.class}</td>
+                  <td className="px-6 py-4 text-right text-teal-200 text-sm">{row.monthly}</td>
+                  <td className="px-6 py-4 text-right text-teal-200 text-sm">{row.yearly}</td>
+                  <td className="px-6 py-4 text-right text-teal-200 text-sm">{row.usd}</td>
+                  <td className="px-6 py-4 text-right text-teal-200 text-sm">{row.eur}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        <div className="max-w-3xl mx-auto bg-amber-50 rounded-2xl p-6 border border-amber-100">
-          <h3 className="font-bold text-sky-900 mb-2">Sponsorship Programme</h3>
-          <p className="text-slate-600 text-sm leading-relaxed">
+        <div className="max-w-3xl mx-auto bg-teal-700 rounded-2xl p-6 border border-teal-600">
+          <h3 className="font-bold text-orange-400 mb-2">Sponsorship Programme</h3>
+          <p className="text-teal-200 text-sm leading-relaxed">
             Currently, <strong>30 students</strong> (almost 50% of total enrolment) are fully sponsored
             by volunteers, and one student is sponsored by the school itself. For fees in other currencies,
             please email us directly.
