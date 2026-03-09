@@ -3,18 +3,18 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const images = [
-  { src: "/gallery/IMG_9171.jpg", alt: "School life", caption: "Students enjoying their break time on the school grounds in Leh." },
-  { src: "/gallery/IMG_9256.jpg", alt: "Students at school", caption: "A moment of learning and connection in one of our classrooms." },
-  { src: "/gallery/IMG_9309.jpg", alt: "School campus", caption: "The Himalayan International School campus, nestled in the heart of Ladakh." },
-  { src: "/gallery/IMG_9313.jpg", alt: "School life", caption: "Our students bring energy and joy to every corner of the school." },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.07.jpeg", alt: "School activities", caption: "Celebrating culture and creativity through school activities." },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.14.jpeg", alt: "Students learning", caption: "Engaged and curious — learning in a warm, supportive environment." },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.14 (1).jpeg", alt: "Classroom activities", caption: "Small class sizes mean every child gets the attention they deserve." },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15.jpeg", alt: "School events", caption: "School events bring students, teachers, and families together." },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15 (1).jpeg", alt: "Students at school", caption: "Friendships and memories made at Himalayan International School." },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15 (2).jpeg", alt: "School life", caption: "A vibrant school community rooted in Ladakhi values." },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.18 (1).jpeg", alt: "School activities", caption: "Traditional dance and arts are woven into school life." },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.19.jpeg", alt: "Students and teachers", caption: "Our dedicated teachers nurture every student's potential." },
+  { src: "/gallery/IMG_9171.jpg", alt: "", caption: "" },
+  { src: "/gallery/IMG_9256.jpg", alt: "", caption: "" },
+  { src: "/gallery/IMG_9309.jpg", alt: "", caption: "" },
+  { src: "/gallery/IMG_9313.jpg", alt: "", caption: "" },
+  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.07.jpeg", alt: "", caption: "" },
+  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.14.jpeg", alt: "", caption: "" },
+  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.14 (1).jpeg", alt: "", caption: "" },
+  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15.jpeg", alt: "", caption: "" },
+  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15 (1).jpeg", alt: "", caption: "" },
+  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15 (2).jpeg", alt: "", caption: "" },
+  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.18 (1).jpeg", alt: "", caption: "" },
+  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.19.jpeg", alt: "", caption: "" },
 ];
 
 export default function Gallery() {
