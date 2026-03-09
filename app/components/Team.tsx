@@ -18,25 +18,25 @@ const team = [
 
 export default function Team() {
   return (
-    <section id="team" className="py-20 bg-white">
+    <section id="team" className="py-20 bg-teal-800 text-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">Our Management Team</h2>
-          <div className="w-16 h-1 bg-amber-500 mx-auto"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Management Team</h2>
+          <div className="w-16 h-1 bg-orange-400 mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member) => (
             <div
               key={member.name}
-              className="bg-slate-50 rounded-2xl p-8 border border-slate-100 text-center"
+              className="bg-teal-700 rounded-2xl p-8 border border-teal-600 text-center"
             >
-              <div className="w-16 h-16 bg-sky-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">{member.name[0]}</span>
               </div>
-              <h3 className="text-lg font-bold text-sky-900 mb-1">{member.name}</h3>
-              <p className="text-amber-600 text-sm font-semibold mb-4">{member.role}</p>
-              <p className="text-slate-600 text-sm leading-relaxed text-left">{member.bio}</p>
+              <h3 className="text-lg font-bold text-white mb-1">{member.name}</h3>
+              <p className="text-orange-400 text-sm font-semibold mb-4">{member.role}</p>
+              <p className="text-teal-200 text-sm leading-relaxed text-left">{member.bio}</p>
             </div>
           ))}
         </div>

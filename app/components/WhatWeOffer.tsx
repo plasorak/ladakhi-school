@@ -1,25 +1,25 @@
 const offerings = [
   {
     emoji: "📚",
-    bg: "bg-sky-50",
+    bg: "bg-sky-100",
     title: "Classes",
     desc: "Kindergarten to Grade 8, with small class sizes for personalised attention.",
   },
   {
     emoji: "📖",
-    bg: "bg-amber-50",
+    bg: "bg-orange-100",
     title: "Curriculum",
     desc: "Mathematics, Social Studies, Science, English, Hindi, and Ladakhi language.",
   },
   {
     emoji: "🎭",
-    bg: "bg-teal-50",
+    bg: "bg-teal-100",
     title: "Activities",
     desc: "Traditional dance, games, sports, Parents' Day, picnics, and study tours.",
   },
   {
     emoji: "🏫",
-    bg: "bg-rose-50",
+    bg: "bg-rose-100",
     title: "Facilities",
     desc: "10 classrooms, office, kitchen, and a playground.",
   },
@@ -27,11 +27,11 @@ const offerings = [
 
 export default function WhatWeOffer() {
   return (
-    <section id="offer" className="py-20 bg-slate-50">
+    <section id="offer" className="py-20 bg-warm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">What We Offer</h2>
-          <div className="w-16 h-1 bg-amber-500 mx-auto"></div>
+          <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
