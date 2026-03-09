@@ -51,11 +51,11 @@ const students = [
 
 export default function Students() {
   return (
-    <section id="students" className="py-20 bg-slate-50">
+    <section id="students" className="py-20 bg-warm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">Meet Our Students</h2>
-          <div className="w-16 h-1 bg-amber-500 mx-auto mb-8"></div>
+          <div className="w-16 h-1 bg-orange-500 mx-auto mb-8"></div>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Every student has a story of courage, hope, and determination. Our school welcomes children
             from humble backgrounds — each full of talent and working hard to build a brighter future.
@@ -64,9 +64,9 @@ export default function Students() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           {students.map((s) => (
-            <div key={s.name} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
+            <div key={s.name} className="bg-slate-200 rounded-2xl p-6 border border-slate-200 shadow-sm">
               <div className="text-4xl mb-3">{s.emoji}</div>
-              <p className="text-amber-700 font-semibold italic text-sm mb-3">"{s.quote}"</p>
+              <p className="text-orange-700 font-semibold italic text-sm mb-3">"{s.quote}"</p>
               <h3 className="font-bold text-sky-900 text-lg">{s.name}</h3>
               <p className="text-slate-400 text-sm mb-3">{s.classYear}</p>
               <p className="text-slate-600 text-sm leading-relaxed">{s.story}</p>

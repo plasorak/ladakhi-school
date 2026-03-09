@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-900 via-sky-800 to-teal-700 text-white">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-900 via-teal-800 to-teal-600 text-white">
       {/* Mountain silhouette decoration */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
         <svg viewBox="0 0 1440 500" className="absolute bottom-0 w-full" preserveAspectRatio="xMidYMax slice">
@@ -11,7 +11,7 @@ export default function Hero() {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20">
         <div className="mb-6">
-          <span className="inline-block bg-amber-500 text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
+          <span className="inline-block bg-orange-500 text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
             Est. 1994 · Leh, Ladakh, India
           </span>
         </div>
@@ -19,7 +19,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Himalayan International
           <br />
-          <span className="text-amber-400">School Ladakh</span>
+          <span className="text-orange-400">School Ladakh</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-sky-100 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#about"
-            className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-full transition-colors"
+            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition-colors"
           >
             Learn More
           </a>
@@ -42,17 +42,17 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-20 grid grid-cols-3 gap-8 max-w-xs mx-auto text-center">
+        <div className="mt-20 mb-16 grid grid-cols-3 gap-8 max-w-xs mx-auto text-center">
           <div>
-            <div className="text-3xl font-bold text-amber-400">64</div>
+            <div className="text-3xl font-bold text-orange-400">64</div>
             <div className="text-sky-200 text-sm mt-1">Students</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-amber-400">10</div>
+            <div className="text-3xl font-bold text-orange-400">10</div>
             <div className="text-sky-200 text-sm mt-1">Teachers</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-amber-400">30+</div>
+            <div className="text-3xl font-bold text-orange-400">30+</div>
             <div className="text-sky-200 text-sm mt-1">Years</div>
           </div>
         </div>
