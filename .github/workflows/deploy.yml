@@ -28,6 +28,9 @@ jobs:
           cache: npm
           cache-dependency-path: package-lock.json
 
+      - name: Check LFS files
+        run: ls -lh public/ && ls -lh public/gallery/ || true
+
       - name: Install dependencies
         run: npm ci
 
