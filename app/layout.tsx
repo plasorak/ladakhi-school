@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Himalayan International School Ladakh",
   description: "Quality education in Leh, Ladakh since 1994. Celebrating diversity, preserving Ladakhi culture, and empowering every child to thrive.",
+  icons: { icon: "/icon.png" },
 };
 
 export default function RootLayout({
