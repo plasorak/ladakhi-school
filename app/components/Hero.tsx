@@ -21,7 +21,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <section className="relative min-h-screen flex flex-col text-white overflow-hidden">
       {/* Background photo */}
       <Image
         src="/back-cover.jpg"
@@ -46,7 +46,6 @@ export default function Hero() {
             style={{
               left: `${(i / (flagCount - 1)) * 100}%`,
               top: sag(i, flagCount),
-              transform: "translateX(-50%)",
               animationDelay: `${i * 0.12}s`,
             }}
           >
@@ -68,23 +67,24 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* Yak */}
-      {/* <div className="yak z-20" aria-hidden="true">🐃</div> */}
+      {/* Spacer: clears navbar (64px) + flags (120px) */}
+      <div className="flex-none h-[184px]" />
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20">
-        <div className="mb-6">
+      {/* Main content centered in the remaining space */}
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-6 pb-4">
+        <div className="mb-4">
           <span className="inline-block bg-orange-500 text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
             Est. 1994 · Leh, Ladakh, India
           </span>
         </div>
 
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight max-w-4xl">
           Himalayan International
           <br />
           <span className="text-orange-400">School Ladakh</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-sky-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-sky-100 mb-6 max-w-2xl leading-relaxed">
           Quality education that celebrates diversity, preserves Ladakhi culture,
           and empowers every child to thrive.
         </p>
@@ -104,7 +104,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-20 mb-16 grid grid-cols-3 gap-8 max-w-xs mx-auto text-center">
+        <div className="mt-8 mb-4 grid grid-cols-3 gap-8 max-w-xs text-center">
           <div>
             <div className="text-3xl font-bold text-orange-400">64</div>
             <div className="text-sky-200 text-sm mt-1">Students</div>
