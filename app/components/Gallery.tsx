@@ -3,18 +3,18 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const images = [
-  { src: "/gallery/IMG_9171.jpg", alt: "", caption: "" },
-  { src: "/gallery/IMG_9256.jpg", alt: "", caption: "" },
-  { src: "/gallery/IMG_9309.jpg", alt: "", caption: "" },
-  { src: "/gallery/IMG_9313.jpg", alt: "", caption: "" },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.07.jpeg", alt: "", caption: "" },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.14.jpeg", alt: "", caption: "" },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.14 (1).jpeg", alt: "", caption: "" },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15.jpeg", alt: "", caption: "" },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15 (1).jpeg", alt: "", caption: "" },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.15 (2).jpeg", alt: "", caption: "" },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.18 (1).jpeg", alt: "", caption: "" },
-  { src: "/gallery/WhatsApp Image 2024-11-29 at 11.12.19.jpeg", alt: "", caption: "" },
+  { src: "/gallery/school-entrance.jpg", alt: "Front entrance of Himalayan International School Ladakh under a clear blue sky", caption: "The school building in Leh, Union Territory of Ladakh" },
+  { src: "/gallery/classroom-timetable.jpg", alt: "Colourful handmade weekly timetable displayed on a classroom wall", caption: "A hand-crafted weekly timetable decorating the classroom" },
+  { src: "/gallery/teachers-at-school-entrance.jpg", alt: "Group of seven women teachers standing in front of the school entrance", caption: "Teachers and staff at the school entrance" },
+  { src: "/gallery/ladakh-mountain-landscape.jpg", alt: "Panoramic view of Leh town with the Himalayan mountain range stretching across the horizon", caption: "The breathtaking Himalayan landscape surrounding the school" },
+  { src: "/gallery/book-donation-students.jpg", alt: "Students and teachers gathered in front of the school holding donated books", caption: "Students proudly receiving donated books and school supplies" },
+  { src: "/gallery/students-traditional-ladakhi-dress.jpg", alt: "Four girls wearing traditional Ladakhi perak headdresses and red ceremonial robes", caption: "Students dressed in traditional Ladakhi attire" },
+  { src: "/gallery/traditional-dress-celebration-cake.jpg", alt: "Girls in traditional Ladakhi dress standing behind adults cutting a celebration cake", caption: "A celebration with students in traditional dress" },
+  { src: "/gallery/students-school-bus.jpg", alt: "Students in school uniform posing in front of the yellow school bus", caption: "Students with the school bus" },
+  { src: "/gallery/visitors-interactive-classroom.jpg", alt: "International visitors sitting on the classroom floor engaging with young students", caption: "Visitors joining students for an interactive classroom session" },
+  { src: "/gallery/visitors-welcome-khata.jpg", alt: "International visitors being welcomed with traditional white khata scarves outside the school", caption: "Welcoming visitors with traditional khata scarves" },
+  { src: "/gallery/students-cultural-dance-performance.jpg", alt: "Students in colourful traditional costumes performing a cultural dance at a parents day event", caption: "Students performing a traditional dance at Parents Day" },
+  { src: "/gallery/staff-parents-day-celebration.jpg", alt: "School staff wearing white khata scarves posing together at the Parents Day celebration", caption: "Staff at the Parents Day celebration" },
 ];
 
 export default function Gallery() {
