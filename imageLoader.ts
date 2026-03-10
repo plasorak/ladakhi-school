@@ -1,3 +1,3 @@
-export default function imageLoader({ src }: { src: string }) {
-  return `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${src}`;
+export default function imageLoader({ src, width }: { src: string; width: number }) {
+  return `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${src}?w=${width}`;
 }
