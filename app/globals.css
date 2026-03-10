@@ -29,8 +29,8 @@ body {
 
 /* Prayer flags wave */
 @keyframes wave {
-  0%, 100% { transform: skewX(-3deg) scaleY(0.97); }
-  50%       { transform: skewX(3deg)  scaleY(1.03); }
+  0%, 100% { transform: translateX(-50%) skewX(-3deg) scaleY(0.97); }
+  50%       { transform: translateX(-50%) skewX(3deg)  scaleY(1.03); }
 }
 
 .flag-wave {
