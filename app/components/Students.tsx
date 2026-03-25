@@ -1,7 +1,13 @@
+"use client";
+import Image from "next/image";
+
 const students = [
   {
     name: "Stanzin Yangdol",
     classYear: "Class 8",
+    photo: "/students/stanzin-yangdol.jpg",
+    photoPosition: "50% 5%",
+    photoZoom: 1.7,
     emoji: "💃",
     quote: "One day, I'll dance on the world's biggest stage!",
     story:
@@ -10,6 +16,9 @@ const students = [
   {
     name: "Nima Chodon",
     classYear: "Class 8",
+    photo: "/students/nima-chosdon.jpg",
+    photoPosition: "47% 35%",
+    photoZoom: 2.4,
     emoji: "🌈",
     quote: "One day, I'll help people by becoming an IAS officer!",
     story:
@@ -18,6 +27,9 @@ const students = [
   {
     name: "Komal Parihar",
     classYear: "Class 6",
+    photo: "/students/komal-parihar.jpg",
+    photoPosition: "44% 53%",
+    photoZoom: 2.2,
     emoji: "📐",
     quote: "Maths is my favorite — I want to be a teacher one day!",
     story:
@@ -26,6 +38,9 @@ const students = [
   {
     name: "Thubstan Deskyong",
     classYear: "Class 2",
+    photo: "/students/thubstan-deskyong.jpg",
+    photoPosition: "38% 15%",
+    photoZoom: 1.9,
     emoji: "🔭",
     quote: "I want to explore the stars!",
     story:
@@ -34,6 +49,7 @@ const students = [
   {
     name: "Jigmet Dolkar",
     classYear: "Class 8",
+    photo: null,
     emoji: "✏️",
     quote: "One day I'll write stories that inspire people!",
     story:
@@ -42,6 +58,9 @@ const students = [
   {
     name: "Jigmet Spaldan",
     classYear: "Class 7",
+    photo: "/students/jigmet-spaldan.jpg",
+    photoPosition: "48% 47%",
+    photoZoom: 3.0,
     emoji: "🏅",
     quote: "I want to join the Army and save my country!",
     story:
@@ -67,7 +86,25 @@ export default function Students() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           {students.map((s) => (
             <div key={s.name} className="bg-slate-200 rounded-2xl p-6 border border-slate-200 shadow-sm">
-              <div className="text-4xl mb-3">{s.emoji}</div>
+              <div className="mb-3 flex justify-center">
+                {s.photo ? (
+                  <div className="rounded-full overflow-hidden w-40 h-40">
+                    <Image
+                      src={s.photo}
+                      alt={s.name}
+                      width={160}
+                      height={160}
+                      className="object-contain w-40 h-40"
+                      style={{
+                        transformOrigin: s.photoPosition ?? "center",
+                        transform: `scale(${s.photoZoom ?? 1})`,
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <div className="rounded-full w-40 h-40 bg-slate-300" />
+                )}
+              </div>
               <p className="text-orange-700 font-semibold italic text-sm mb-3">"{s.quote}"</p>
               <h3 className="font-bold text-sky-900 text-lg">{s.name}</h3>
               <p className="text-slate-400 text-sm mb-3">{s.classYear}</p>
