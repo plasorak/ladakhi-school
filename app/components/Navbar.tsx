@@ -6,6 +6,7 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#offer", label: "What We Offer" },
   { href: "#team", label: "Our Team" },
+  { href: "#teachers", label: "Teachers" },
   { href: "#students", label: "Students" },
   { href: "#admissions", label: "Admissions" },
   { href: "#help", label: "How to Help" },
