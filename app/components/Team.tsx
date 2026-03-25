@@ -2,17 +2,17 @@ const team = [
   {
     name: "Tsewang Norboo",
     role: "Executive Director",
-    bio: "A highly experienced educator and administrator with over two decades of leadership in the Government's Education Department. He has served as a teacher, project officer for adult education, Zonal Education Officer, and Deputy Chief Education Officer, contributing significantly to social development and education in Ladakh.",
+    bio: "Mr. Norboo is a highly experienced educator and administrator, having served in various leadership roles within the Government’s Education Department for over two decades. He has been a teacher, project officer for adult education, and held positions such as Zonal Education Officer and Deputy Chief Education Officer. Throughout his career and as the Executive Director of an NGO that works closely with the school, he has contributed significantly to social development and education in the region. His dedication and expertise continue to guide the vision and growth of Himalayan International School Ladakh.",
   },
   {
     name: "Tsering Morup",
     role: "Core Committee Member",
-    bio: "Brings a wealth of experience in education and community service, having served as a teacher and head assistant in the Education Department. A founder member of Lamdon Social Welfare Society and Lotsava Lamdon Model School, with active participation in national and international conferences.",
+    bio: "Mr. Tsering Morup brings a wealth of experience in education and community service to Himalayan International School Ladakh. He has served as a teacher and head assistant in the Education Department, and has also worked with the Animal Husbandry Department. Mr. Morup is a founder member of several social welfare organisations, including Lamdon Social Welfare Society and Lotsava Lamdon Model School. He has actively participated in national and international conferences, seminars, and workshops, contributing to the development of education and social welfare in Ladakh.",
   },
   {
     name: "Padma Tashi",
     role: "Core Committee Member",
-    bio: "Director of Live to Love India and Executive Director of Rural Development and You (RDY) since 2004. He leads initiatives in education, environment, and rural empowerment, and is a member of CENSFOOD advancing climate-resilient livelihoods across remote Himalayan villages.",
+    bio: "Padma Tashi is a dedicated leader and social worker with extensive experience in community development and education in Ladakh. He has served on district-level monitoring and anti-smoking committees, worked with the Ladakh Ecological Development Group, and is the Executive Director of Rural Development and You (RDY) since 2004. Padma Tashi has contributed voluntary services to youth programmes and is actively involved with several community-based organisations and private schools. He regularly participates in national and international seminars, workshops, and conferences, helping to advance education and social welfare in the region.",
   },
 ];
 
