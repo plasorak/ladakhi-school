@@ -30,7 +30,13 @@ export default function About() {
             Himalayan International School Ladakh, previously known as <strong>Kunfan School</strong>, was
             established in <strong>1994</strong> by a group of dedicated individuals committed to improving
             education in Ladakh. The school currently enrols <strong>64 students</strong> and employs{" "}
-            <strong>ten teachers</strong>, maintaining a low student-to-teacher ratio for personalised learning.
+            <strong>10 teachers</strong>, maintaining a low student-to-teacher ratio for personalised learning.
+          </p>
+          <p className="text-lg text-sky-200 max-w-3xl mx-auto leading-relaxed">
+            Many of the students come from underprivileged backgrounds, with the school providing scholarships
+            that make education accessible to those who would otherwise not have the opportunity to attend.
+            The school is supported by donors who fund the students' fees, enabling it to continue offering
+            education to those in need.
           </p>
         </div>
 

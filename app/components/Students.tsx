@@ -58,7 +58,9 @@ export default function Students() {
           <div className="w-16 h-1 bg-orange-500 mx-auto mb-8"></div>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Every student has a story of courage, hope, and determination. Our school welcomes children
-            from humble backgrounds — each full of talent and working hard to build a brighter future.
+            from humble backgrounds, each full of talent and working hard to build a brighter future.
+            Through your donations, these students can access education and pursue their dreams,
+            turning them into reality.
           </p>
         </div>
 
