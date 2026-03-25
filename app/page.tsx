@@ -4,6 +4,7 @@ import Gallery from "./components/Gallery";
 import About from "./components/About";
 import WhatWeOffer from "./components/WhatWeOffer";
 import Team from "./components/Team";
+import Teachers from "./components/Teachers";
 import Students from "./components/Students";
 import Admissions from "./components/Admissions";
 import HowToHelp from "./components/HowToHelp";
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <WhatWeOffer />
       <Team />
+      <Teachers />
       <Students />
       <Admissions />
       <HowToHelp />
