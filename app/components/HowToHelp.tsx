@@ -1,13 +1,13 @@
 const projects = [
-  { name: "Kindergarten Section", cost: "₹1 Cr" },
-  { name: "Playground", cost: "₹15 L" },
-  { name: "Hostels for Students", cost: "₹1 Cr" },
-  { name: "Dining Hall", cost: "₹50 L" },
+  { name: "Kindergarten Section", cost: "approx. ₹1 Cr / $105,000 / €90,000 / £77,000" },
+  { name: "Playground", cost: "approx. ₹15 L / $15,700 / €13,500 / £11,500" },
+  { name: "Hostels for Students", cost: "approx. ₹1 Cr / $105,000 / €90,000 / £77,000" },
+  { name: "Dining Hall", cost: "approx. ₹50 L / $52,500 / €45,000 / £38,500" },
 ];
 
 const donateItems = [
-  "Musical instruments — guitar, drum kit, piano, traditional Ladakhi instruments",
-  "Sports equipment — carrom board, volleyball, cricket, badminton, basketball",
+  "Musical instruments: guitar, drum kit, piano, traditional Ladakhi instruments",
+  "Sports equipment: carrom board, volleyball, cricket, badminton, basketball",
 ];
 
 const volunteerRoles = ["Computer teacher", "Music teacher", "Games teacher"];
@@ -32,9 +32,9 @@ export default function HowToHelp() {
             <h3 className="text-xl font-bold mb-5 text-sky-900">Donate to a Project</h3>
             <ul className="space-y-3">
               {projects.map((p) => (
-                <li key={p.name} className="flex justify-between items-center text-sm border-b border-slate-300 pb-3">
-                  <span className="text-slate-600">{p.name}</span>
-                  <span className="font-bold text-sky-900">{p.cost}</span>
+                <li key={p.name} className="text-sm border-b border-slate-300 pb-3">
+                  <div className="text-slate-600">{p.name}</div>
+                  <div className="font-bold text-sky-900">{p.cost}</div>
                 </li>
               ))}
             </ul>
