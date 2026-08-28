@@ -78,7 +78,7 @@ export default function Teachers() {
   }, [paused, next]);
 
   return (
-    <section id="teachers" className="py-20 bg-sky-50">
+    <section id="teachers" className="py-14 sm:py-20 bg-sky-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">Meet Our Teachers</h2>
@@ -93,80 +93,71 @@ export default function Teachers() {
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
-          {/* Card slideshow */}
+          {/* Card slideshow — one card at its natural height */}
           <div className="relative">
-            {/* Invisible tallest card to hold layout height */}
-            <div aria-hidden className="invisible pointer-events-none">
-              <div className="bg-white rounded-2xl p-8 border border-sky-100 shadow-sm flex flex-col">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-full shrink-0" />
-                  <div>
-                    <p className="text-lg">&nbsp;</p>
-                    <p className="text-sm">&nbsp;</p>
-                  </div>
+            <div key={current} className="bg-white rounded-2xl p-5 sm:p-8 border border-sky-100 shadow-sm flex flex-col animate-fade-in">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 bg-teal-700 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-white text-xl font-bold">{teachers[current].name[0]}</span>
                 </div>
-                <div className="text-sm leading-relaxed flex flex-col gap-2">
-                  {teachers[0].bio.split("<br>").map((part, j) => (
-                    <p key={j}>{part}</p>
-                  ))}
+                <div>
+                  <h3 className="font-bold text-sky-900 text-lg leading-tight">{teachers[current].name}</h3>
+                  <p className="text-orange-500 text-sm font-semibold">{teachers[current].role}</p>
                 </div>
+              </div>
+              {teachers[current].quote && (
+                <p className="text-teal-700 font-semibold italic text-sm mb-3">&ldquo;{teachers[current].quote}&rdquo;</p>
+              )}
+              <div className="text-slate-600 text-sm leading-relaxed flex flex-col gap-2">
+                {teachers[current].bio.split("<br>").map((part, j) => (
+                  <p key={j}>{part}</p>
+                ))}
               </div>
             </div>
 
-            {teachers.map((teacher, i) => (
-              <div
-                key={teacher.name}
-                className={`absolute inset-0 transition-opacity duration-700 ${i === current ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
-              >
-                <div className="bg-white rounded-2xl p-8 border border-sky-100 shadow-sm h-full flex flex-col">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-14 h-14 bg-teal-700 rounded-full flex items-center justify-center shrink-0">
-                      <span className="text-white text-xl font-bold">{teacher.name[0]}</span>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-sky-900 text-lg leading-tight">{teacher.name}</h3>
-                      <p className="text-orange-500 text-sm font-semibold">{teacher.role}</p>
-                    </div>
-                  </div>
-                  {teacher.quote && (
-                    <p className="text-teal-700 font-semibold italic text-sm mb-3">"{teacher.quote}"</p>
-                  )}
-                  <div className="text-slate-600 text-sm leading-relaxed flex flex-col gap-2">
-                    {teacher.bio.split("<br>").map((part, j) => (
-                      <p key={j}>{part}</p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-
-            {/* Prev / Next buttons */}
+            {/* Prev / Next buttons — outside the card on larger screens */}
             <button
               onClick={prev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 bg-teal-700 hover:bg-teal-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors shadow-md z-10"
+              className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-teal-700 hover:bg-teal-600 text-white rounded-full w-10 h-10 items-center justify-center transition-colors shadow-md z-10"
               aria-label="Previous teacher"
             >
               ‹
             </button>
             <button
               onClick={next}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 bg-teal-700 hover:bg-teal-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors shadow-md z-10"
+              className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-teal-700 hover:bg-teal-600 text-white rounded-full w-10 h-10 items-center justify-center transition-colors shadow-md z-10"
               aria-label="Next teacher"
             >
               ›
             </button>
           </div>
 
-          {/* Dot indicators */}
-          <div className="flex justify-center gap-1.5 mt-6">
-            {teachers.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrent(i)}
-                className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-orange-500" : "bg-sky-300"}`}
-                aria-label={`Go to teacher ${i + 1}`}
-              />
-            ))}
+          {/* Controls: arrows (mobile) + dot indicators */}
+          <div className="flex justify-center items-center gap-3 mt-6">
+            <button
+              onClick={prev}
+              className="lg:hidden bg-teal-700 hover:bg-teal-600 text-white rounded-full w-9 h-9 flex items-center justify-center transition-colors shadow-md shrink-0"
+              aria-label="Previous teacher"
+            >
+              ‹
+            </button>
+            <div className="flex justify-center gap-1.5">
+              {teachers.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrent(i)}
+                  className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-orange-500" : "bg-sky-300"}`}
+                  aria-label={`Go to teacher ${i + 1}`}
+                />
+              ))}
+            </div>
+            <button
+              onClick={next}
+              className="lg:hidden bg-teal-700 hover:bg-teal-600 text-white rounded-full w-9 h-9 flex items-center justify-center transition-colors shadow-md shrink-0"
+              aria-label="Next teacher"
+            >
+              ›
+            </button>
           </div>
         </div>
       </div>

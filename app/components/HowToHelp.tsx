@@ -14,7 +14,7 @@ const volunteerRoles = ["Computer teacher", "Music teacher", "Games teacher"];
 
 export default function HowToHelp() {
   return (
-    <section id="help" className="py-20 bg-warm">
+    <section id="help" className="py-14 sm:py-20 bg-warm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">How You Can Help</h2>
@@ -25,9 +25,9 @@ export default function HowToHelp() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
           {/* Donate to a project */}
-          <div className="bg-slate-200 rounded-2xl p-8">
+          <div className="bg-slate-200 rounded-2xl p-6 sm:p-8">
             <div className="text-4xl mb-4">💰</div>
             <h3 className="text-xl font-bold mb-5 text-sky-900">Donate to a Project</h3>
             <ul className="space-y-3">
@@ -42,7 +42,7 @@ export default function HowToHelp() {
           </div>
 
           {/* Sponsor a child */}
-          <div className="bg-slate-200 rounded-2xl p-8">
+          <div className="bg-slate-200 rounded-2xl p-6 sm:p-8">
             <div className="text-4xl mb-4">🎓</div>
             <h3 className="text-xl font-bold mb-4 text-sky-900">Sponsor a Child</h3>
             <p className="text-slate-600 text-sm leading-relaxed mb-6">
@@ -59,7 +59,7 @@ export default function HowToHelp() {
           </div>
 
           {/* Donate items + Volunteer */}
-          <div className="bg-slate-200 rounded-2xl p-8">
+          <div className="bg-slate-200 rounded-2xl p-6 sm:p-8">
             <div className="text-4xl mb-4">🎁</div>
             <h3 className="text-xl font-bold mb-3 text-sky-900">Donate Items</h3>
             <ul className="space-y-2 mb-7">

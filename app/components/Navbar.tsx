@@ -56,12 +56,12 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <ul className="lg:hidden bg-warm border-t border-slate-100 px-4 pb-4 flex flex-col gap-3 text-sm">
+        <ul className="lg:hidden absolute left-0 right-0 top-full bg-warm border-t border-slate-100 shadow-lg px-4 py-2 flex flex-col divide-y divide-slate-100 text-base max-h-[calc(100vh-4rem)] overflow-y-auto">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="block py-1 text-slate-600 hover:text-orange-500 transition-colors"
+                className="block py-3 text-slate-600 hover:text-orange-500 transition-colors"
                 onClick={() => setOpen(false)}
               >
                 {l.label}

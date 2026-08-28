@@ -31,8 +31,8 @@ export default function Gallery() {
   }, [paused, next]);
 
   return (
-    <section className="py-16 bg-warm">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-12 sm:py-16 bg-warm">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">Gallery</h2>
           <div className="w-16 h-1 bg-orange-500 mx-auto"></div>

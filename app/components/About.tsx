@@ -21,7 +21,7 @@ const pillars = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-sky-900 text-white">
+    <section id="about" className="py-14 sm:py-20 bg-sky-900 text-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About Us</h2>
@@ -40,9 +40,9 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
           {pillars.map((p) => (
-            <div key={p.title} className="bg-sky-800 rounded-2xl p-8 border border-sky-700">
+            <div key={p.title} className="bg-sky-800 rounded-2xl p-6 sm:p-8 border border-sky-700">
               <div className="text-4xl mb-4">{p.emoji}</div>
               <h3 className="text-xl font-bold text-orange-400 mb-3">{p.title}</h3>
               <p className="text-sky-200 leading-relaxed">{p.text}</p>

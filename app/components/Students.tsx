@@ -70,7 +70,7 @@ const students = [
 
 export default function Students() {
   return (
-    <section id="students" className="py-20 bg-warm">
+    <section id="students" className="py-14 sm:py-20 bg-warm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">Meet Our Students</h2>

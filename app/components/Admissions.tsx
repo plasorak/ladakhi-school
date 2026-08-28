@@ -35,8 +35,8 @@ const fees = [
 
 export default function Admissions() {
   return (
-    <section id="admissions" className="py-20 bg-teal-800 text-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="admissions" className="py-14 sm:py-20 bg-teal-800 text-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Admissions process */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Admissions</h2>
@@ -46,7 +46,7 @@ export default function Admissions() {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto mb-20">
+        <div className="max-w-2xl mx-auto mb-12 sm:mb-20">
           {steps.map((step) => (
             <div key={step.num} className="flex gap-5 mb-8">
               <div className="flex-shrink-0 w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
@@ -69,30 +69,34 @@ export default function Admissions() {
           </p>
         </div>
 
-        <div className="overflow-x-auto max-w-3xl mx-auto mb-8">
+        <div className="overflow-x-auto max-w-3xl mx-auto mb-4">
           <table className="w-full border-collapse rounded-2xl overflow-hidden shadow-sm border border-teal-700">
             <thead>
-              <tr className="bg-teal-700 text-white text-sm">
-                <th className="text-left px-6 py-4 font-semibold">Class</th>
-                <th className="text-right px-6 py-4 font-semibold">Monthly (₹)</th>
-                <th className="text-right px-6 py-4 font-semibold">Yearly (₹)</th>
-                <th className="text-right px-6 py-4 font-semibold">USD</th>
-                <th className="text-right px-6 py-4 font-semibold">EUR</th>
+              <tr className="bg-teal-700 text-white text-xs sm:text-sm">
+                <th className="text-left px-3 sm:px-6 py-4 font-semibold">Class</th>
+                <th className="text-right px-3 sm:px-6 py-4 font-semibold">Monthly (₹)</th>
+                <th className="text-right px-3 sm:px-6 py-4 font-semibold">Yearly (₹)</th>
+                <th className="hidden sm:table-cell text-right px-6 py-4 font-semibold">USD</th>
+                <th className="hidden sm:table-cell text-right px-6 py-4 font-semibold">EUR</th>
               </tr>
             </thead>
             <tbody>
               {fees.map((row, i) => (
                 <tr key={row.class} className={i % 2 === 0 ? "bg-teal-700/60" : "bg-teal-700/30"}>
-                  <td className="px-6 py-4 font-medium text-orange-400 text-sm">{row.class}</td>
-                  <td className="px-6 py-4 text-right text-teal-200 text-sm">{row.monthly}</td>
-                  <td className="px-6 py-4 text-right text-teal-200 text-sm">{row.yearly}</td>
-                  <td className="px-6 py-4 text-right text-teal-200 text-sm">{row.usd}</td>
-                  <td className="px-6 py-4 text-right text-teal-200 text-sm">{row.eur}</td>
+                  <td className="px-3 sm:px-6 py-4 font-medium text-orange-400 text-xs sm:text-sm">{row.class}</td>
+                  <td className="px-3 sm:px-6 py-4 text-right text-teal-200 text-xs sm:text-sm whitespace-nowrap">{row.monthly}</td>
+                  <td className="px-3 sm:px-6 py-4 text-right text-teal-200 text-xs sm:text-sm whitespace-nowrap">{row.yearly}</td>
+                  <td className="hidden sm:table-cell px-6 py-4 text-right text-teal-200 text-sm">{row.usd}</td>
+                  <td className="hidden sm:table-cell px-6 py-4 text-right text-teal-200 text-sm">{row.eur}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+
+        <p className="sm:hidden text-teal-300 text-xs text-center max-w-3xl mx-auto mb-8">
+          Nursery – UKG is approx. $350 / €300 per year. Contact us for other currencies.
+        </p>
 
         <div className="max-w-3xl mx-auto bg-teal-700 rounded-2xl p-6 border border-teal-600">
           <h3 className="font-bold text-orange-400 mb-2">Sponsorship Programme</h3>

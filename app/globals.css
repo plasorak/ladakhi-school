@@ -15,6 +15,23 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset anchor jumps so the fixed navbar doesn't cover section headings */
+  scroll-padding-top: 5rem;
+}
+
+/* Prevent stray absolutely-positioned decorations (prayer flags) from
+   causing horizontal scroll on small screens */
+body {
+  overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
 }
 
 .bg-warm {
