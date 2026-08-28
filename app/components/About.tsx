@@ -35,7 +35,7 @@ export default function About() {
           <p className="text-lg text-sky-200 max-w-3xl mx-auto leading-relaxed">
             Many of the students come from underprivileged backgrounds, with the school providing scholarships
             that make education accessible to those who would otherwise not have the opportunity to attend.
-            The school is supported by donors who fund the students' fees, enabling it to continue offering
+            The school is supported by donors who fund the students&rsquo; fees, enabling it to continue offering
             education to those in need.
           </p>
         </div>

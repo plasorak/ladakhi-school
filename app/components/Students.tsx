@@ -105,7 +105,7 @@ export default function Students() {
                   <div className="rounded-full w-40 h-40 bg-slate-300" />
                 )}
               </div>
-              <p className="text-orange-700 font-semibold italic text-sm mb-3">"{s.quote}"</p>
+              <p className="text-orange-700 font-semibold italic text-sm mb-3">&ldquo;{s.quote}&rdquo;</p>
               <h3 className="font-bold text-sky-900 text-lg">{s.name}</h3>
               <p className="text-slate-400 text-sm mb-3">{s.classYear}</p>
               <p className="text-slate-600 text-sm leading-relaxed">{s.story}</p>

@@ -84,7 +84,7 @@ export default function Teachers() {
           <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">Meet Our Teachers</h2>
           <div className="w-16 h-1 bg-orange-500 mx-auto mb-8"></div>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Our teachers are educators, mentors and role models. Many have been part of our school for years, showing deep commitment to our community. Together, they create a warm, supportive environment where everyone feels like part of a family. They are dedicated to supporting every child's journey and take pride in helping students grow, succeed, and feel valued every day.
+            Our teachers are educators, mentors and role models. Many have been part of our school for years, showing deep commitment to our community. Together, they create a warm, supportive environment where everyone feels like part of a family. They are dedicated to supporting every child&rsquo;s journey and take pride in helping students grow, succeed, and feel valued every day.
           </p>
         </div>
 
